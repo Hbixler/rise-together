@@ -22,6 +22,8 @@
 		B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2F26276B08001C20F3 /* Feed.storyboard */; };
 		B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3426276B14001C20F3 /* Housing.storyboard */; };
 		B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3926276B21001C20F3 /* JobListings.storyboard */; };
+		B83DFB4F2627729F001C20F3 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB4E2627729F001C20F3 /* MainPage.storyboard */; };
+		B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB5626277364001C20F3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B83DFB2F26276B08001C20F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		B83DFB3426276B14001C20F3 /* Housing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Housing.storyboard; sourceTree = "<group>"; };
 		B83DFB3926276B21001C20F3 /* JobListings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobListings.storyboard; sourceTree = "<group>"; };
+		B83DFB4E2627729F001C20F3 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		B83DFB5626277364001C20F3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,8 @@
 		70A168EB262662C0002583F5 = {
 			isa = PBXGroup;
 			children = (
-				B83DFB2526276AA1001C20F3 /* Profile.storyboard */,
+				B83DFB4E2627729F001C20F3 /* MainPage.storyboard */,
+				B83DFB5626277364001C20F3 /* Profile.storyboard */,
 				B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */,
 				B83DFB2F26276B08001C20F3 /* Feed.storyboard */,
 				7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */,
@@ -256,9 +261,10 @@
 				70A16901262662C5002583F5 /* Assets.xcassets in Resources */,
 				B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */,
 				B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */,
-				B83DFB2626276AA1001C20F3 /* Profile.storyboard in Resources */,
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
 				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
+				B83DFB4F2627729F001C20F3 /* MainPage.storyboard in Resources */,
+				B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */,
 				B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */,
 				70A168FF262662C0002583F5 /* Main.storyboard in Resources */,
 			);
