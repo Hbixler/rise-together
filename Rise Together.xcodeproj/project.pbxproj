@@ -15,6 +15,8 @@
 		70A16904262662C5002583F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A16902262662C5002583F5 /* LaunchScreen.storyboard */; };
 		70A1690F262662C6002583F5 /* Rise_TogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1690E262662C6002583F5 /* Rise_TogetherTests.swift */; };
 		70A1691A262662C6002583F5 /* Rise_TogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A16919262662C6002583F5 /* Rise_TogetherUITests.swift */; };
+		7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */; };
+		7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */; };
 		B83DFB2626276AA1001C20F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2526276AA1001C20F3 /* Profile.storyboard */; };
 		B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */; };
 		B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2F26276B08001C20F3 /* Feed.storyboard */; };
@@ -54,6 +56,8 @@
 		70A16915262662C6002583F5 /* Rise TogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rise TogetherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A16919262662C6002583F5 /* Rise_TogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rise_TogetherUITests.swift; sourceTree = "<group>"; };
 		70A1691B262662C6002583F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingTableViewCell.swift; sourceTree = "<group>"; };
+		7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousingTableViewCell.xib; sourceTree = "<group>"; };
 		B83DFB2526276AA1001C20F3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B83DFB2F26276B08001C20F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				B83DFB2526276AA1001C20F3 /* Profile.storyboard */,
 				B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */,
 				B83DFB2F26276B08001C20F3 /* Feed.storyboard */,
+				7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */,
+				7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */,
 				B83DFB3426276B14001C20F3 /* Housing.storyboard */,
 				B83DFB3926276B21001C20F3 /* JobListings.storyboard */,
 				70A168F6262662C0002583F5 /* Rise Together */,
@@ -252,6 +258,7 @@
 				B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */,
 				B83DFB2626276AA1001C20F3 /* Profile.storyboard in Resources */,
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
+				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
 				B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */,
 				70A168FF262662C0002583F5 /* Main.storyboard in Resources */,
 			);
@@ -279,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70A168FC262662C0002583F5 /* ViewController.swift in Sources */,
+				7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */,
 				70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */,
 				70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */,
 			);
