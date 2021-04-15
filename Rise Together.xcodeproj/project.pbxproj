@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705ECDE92629050500C002EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDE82629050500C002EA /* ProfileViewController.swift */; };
+		705ECDEE2629052800C002EA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDED2629052800C002EA /* CalendarViewController.swift */; };
+		705ECDF32629057400C002EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDF22629057400C002EA /* FeedViewController.swift */; };
+		705ECDF8262905A000C002EA /* HousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDF7262905A000C002EA /* HousingViewController.swift */; };
+		705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDFC262905C600C002EA /* JobListingsViewController.swift */; };
 		70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F7262662C0002583F5 /* AppDelegate.swift */; };
 		70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F9262662C0002583F5 /* SceneDelegate.swift */; };
 		70A168FC262662C0002583F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168FB262662C0002583F5 /* ViewController.swift */; };
@@ -17,7 +22,6 @@
 		70A1691A262662C6002583F5 /* Rise_TogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A16919262662C6002583F5 /* Rise_TogetherUITests.swift */; };
 		7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */; };
 		7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */; };
-		B83DFB2626276AA1001C20F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2526276AA1001C20F3 /* Profile.storyboard */; };
 		B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */; };
 		B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2F26276B08001C20F3 /* Feed.storyboard */; };
 		B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3426276B14001C20F3 /* Housing.storyboard */; };
@@ -44,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		705ECDE82629050500C002EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		705ECDED2629052800C002EA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		705ECDF22629057400C002EA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		705ECDF7262905A000C002EA /* HousingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingViewController.swift; sourceTree = "<group>"; };
+		705ECDFC262905C600C002EA /* JobListingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingsViewController.swift; sourceTree = "<group>"; };
 		70A168F4262662C0002583F5 /* Rise Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rise Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A168F7262662C0002583F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A168F9262662C0002583F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +69,6 @@
 		70A1691B262662C6002583F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingTableViewCell.swift; sourceTree = "<group>"; };
 		7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousingTableViewCell.xib; sourceTree = "<group>"; };
-		B83DFB2526276AA1001C20F3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B83DFB2F26276B08001C20F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		B83DFB3426276B14001C20F3 /* Housing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Housing.storyboard; sourceTree = "<group>"; };
@@ -99,12 +107,17 @@
 			children = (
 				B83DFB4E2627729F001C20F3 /* MainPage.storyboard */,
 				B83DFB5626277364001C20F3 /* Profile.storyboard */,
+				705ECDE82629050500C002EA /* ProfileViewController.swift */,
 				B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */,
+				705ECDED2629052800C002EA /* CalendarViewController.swift */,
 				B83DFB2F26276B08001C20F3 /* Feed.storyboard */,
+				705ECDF22629057400C002EA /* FeedViewController.swift */,
 				7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */,
 				7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */,
 				B83DFB3426276B14001C20F3 /* Housing.storyboard */,
+				705ECDF7262905A000C002EA /* HousingViewController.swift */,
 				B83DFB3926276B21001C20F3 /* JobListings.storyboard */,
+				705ECDFC262905C600C002EA /* JobListingsViewController.swift */,
 				70A168F6262662C0002583F5 /* Rise Together */,
 				70A1690D262662C6002583F5 /* Rise TogetherTests */,
 				70A16918262662C6002583F5 /* Rise TogetherUITests */,
@@ -291,10 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705ECDEE2629052800C002EA /* CalendarViewController.swift in Sources */,
 				70A168FC262662C0002583F5 /* ViewController.swift in Sources */,
+				705ECDF8262905A000C002EA /* HousingViewController.swift in Sources */,
 				7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */,
+				705ECDE92629050500C002EA /* ProfileViewController.swift in Sources */,
 				70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */,
 				70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */,
+				705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */,
+				705ECDF32629057400C002EA /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
