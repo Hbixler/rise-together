@@ -12,6 +12,8 @@
 		705ECDF32629057400C002EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDF22629057400C002EA /* FeedViewController.swift */; };
 		705ECDF8262905A000C002EA /* HousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDF7262905A000C002EA /* HousingViewController.swift */; };
 		705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDFC262905C600C002EA /* JobListingsViewController.swift */; };
+		705ECE0326290C9900C002EA /* JobListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */; };
+		705ECE0426290C9900C002EA /* JobListingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */; };
 		70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F7262662C0002583F5 /* AppDelegate.swift */; };
 		70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F9262662C0002583F5 /* SceneDelegate.swift */; };
 		70A168FC262662C0002583F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168FB262662C0002583F5 /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 		705ECDF22629057400C002EA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		705ECDF7262905A000C002EA /* HousingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingViewController.swift; sourceTree = "<group>"; };
 		705ECDFC262905C600C002EA /* JobListingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingsViewController.swift; sourceTree = "<group>"; };
+		705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingsTableViewCell.swift; sourceTree = "<group>"; };
+		705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobListingsTableViewCell.xib; sourceTree = "<group>"; };
 		70A168F4262662C0002583F5 /* Rise Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rise Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A168F7262662C0002583F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A168F9262662C0002583F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				B83DFB3426276B14001C20F3 /* Housing.storyboard */,
 				705ECDF7262905A000C002EA /* HousingViewController.swift */,
 				B83DFB3926276B21001C20F3 /* JobListings.storyboard */,
+				705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */,
+				705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */,
 				705ECDFC262905C600C002EA /* JobListingsViewController.swift */,
 				70A168F6262662C0002583F5 /* Rise Together */,
 				70A1690D262662C6002583F5 /* Rise TogetherTests */,
@@ -273,6 +279,7 @@
 				70A16904262662C5002583F5 /* LaunchScreen.storyboard in Resources */,
 				70A16901262662C5002583F5 /* Assets.xcassets in Resources */,
 				B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */,
+				705ECE0426290C9900C002EA /* JobListingsTableViewCell.xib in Resources */,
 				B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */,
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
 				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
@@ -310,6 +317,7 @@
 				7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */,
 				705ECDE92629050500C002EA /* ProfileViewController.swift in Sources */,
 				70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */,
+				705ECE0326290C9900C002EA /* JobListingsTableViewCell.swift in Sources */,
 				70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */,
 				705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */,
 				705ECDF32629057400C002EA /* FeedViewController.swift in Sources */,
