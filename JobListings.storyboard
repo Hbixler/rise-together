@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JIX-9u-6Qt" customClass="HousingTableViewCell" customModule="Rise_Together" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JIX-9u-6Qt" customClass="JobListingsTableViewCell" customModule="Rise_Together" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JIX-9u-6Qt" id="hhI-hs-Dpu">
@@ -56,58 +56,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mg3-Kz-dJZ">
-                                <rect key="frame" x="0.0" y="172" width="120" height="65.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-Tm-EKL">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="President" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-c1-uQw">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Fq-GF-f9D">
-                                        <rect key="frame" x="0.0" y="20.5" width="120" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDv-FX-AaV">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="6HI-FB-gBg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="Details">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-8a-lyP">
-                                                <rect key="frame" x="60" y="0.0" width="60" height="45"/>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="1Gy-Qg-uf9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                                <state key="normal" title="Save">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6Fq-GF-f9D" secondAttribute="trailing" constant="200" id="Gbq-ZA-cpA"/>
-                                    <constraint firstItem="6Fq-GF-f9D" firstAttribute="leading" secondItem="Mg3-Kz-dJZ" secondAttribute="leading" id="d8h-I2-FGF"/>
-                                    <constraint firstAttribute="trailing" secondItem="6Fq-GF-f9D" secondAttribute="trailing" id="mU2-pR-8Ck"/>
-                                </constraints>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="President" translatesAutoresizingMaskIntoConstraints="NO" id="oy4-ak-M6c">
-                                <rect key="frame" x="234" y="180" width="180" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3U-ti-YiG">
                                 <rect key="frame" x="-11" y="798" width="425" height="90"/>
                                 <subviews>
@@ -151,6 +99,9 @@
                             <constraint firstAttribute="bottom" secondItem="h3U-ti-YiG" secondAttribute="bottom" constant="10" id="hmo-kD-ZZP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2Lc-dx-P8i" id="4pa-SM-GeS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5p-FJ-tkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +113,6 @@
         <image name="Feed" width="392" height="222"/>
         <image name="Housing" width="374" height="220"/>
         <image name="Jobs2" width="800" height="533"/>
-        <image name="President" width="900" height="675"/>
         <image name="Profile" width="312" height="224"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
