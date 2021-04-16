@@ -12,7 +12,7 @@
         <!--Feed View Controller-->
         <scene sceneID="eB8-QQ-MMR">
             <objects>
-                <viewController id="lF0-k5-3SD" customClass="FeedViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedMe" id="lF0-k5-3SD" customClass="FeedViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLd-Zy-i2q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

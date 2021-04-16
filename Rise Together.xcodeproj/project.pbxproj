@@ -16,8 +16,6 @@
 		705ECE0426290C9900C002EA /* JobListingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */; };
 		70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F7262662C0002583F5 /* AppDelegate.swift */; };
 		70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F9262662C0002583F5 /* SceneDelegate.swift */; };
-		70A168FC262662C0002583F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168FB262662C0002583F5 /* ViewController.swift */; };
-		70A168FF262662C0002583F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A168FD262662C0002583F5 /* Main.storyboard */; };
 		70A16901262662C5002583F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A16900262662C5002583F5 /* Assets.xcassets */; };
 		70A16904262662C5002583F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A16902262662C5002583F5 /* LaunchScreen.storyboard */; };
 		70A1690F262662C6002583F5 /* Rise_TogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1690E262662C6002583F5 /* Rise_TogetherTests.swift */; };
@@ -28,7 +26,7 @@
 		B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2F26276B08001C20F3 /* Feed.storyboard */; };
 		B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3426276B14001C20F3 /* Housing.storyboard */; };
 		B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3926276B21001C20F3 /* JobListings.storyboard */; };
-		B83DFB4F2627729F001C20F3 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB4E2627729F001C20F3 /* MainPage.storyboard */; };
+		B83DFB4F2627729F001C20F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB4E2627729F001C20F3 /* Main.storyboard */; };
 		B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB5626277364001C20F3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +58,6 @@
 		70A168F4262662C0002583F5 /* Rise Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rise Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A168F7262662C0002583F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A168F9262662C0002583F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70A168FB262662C0002583F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		70A168FE262662C0002583F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70A16900262662C5002583F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70A16903262662C5002583F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70A16905262662C5002583F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +73,7 @@
 		B83DFB2F26276B08001C20F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		B83DFB3426276B14001C20F3 /* Housing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Housing.storyboard; sourceTree = "<group>"; };
 		B83DFB3926276B21001C20F3 /* JobListings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobListings.storyboard; sourceTree = "<group>"; };
-		B83DFB4E2627729F001C20F3 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		B83DFB4E2627729F001C20F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B83DFB5626277364001C20F3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +105,7 @@
 		70A168EB262662C0002583F5 = {
 			isa = PBXGroup;
 			children = (
-				B83DFB4E2627729F001C20F3 /* MainPage.storyboard */,
+				B83DFB4E2627729F001C20F3 /* Main.storyboard */,
 				B83DFB5626277364001C20F3 /* Profile.storyboard */,
 				705ECDE82629050500C002EA /* ProfileViewController.swift */,
 				B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */,
@@ -146,8 +142,6 @@
 			children = (
 				70A168F7262662C0002583F5 /* AppDelegate.swift */,
 				70A168F9262662C0002583F5 /* SceneDelegate.swift */,
-				70A168FB262662C0002583F5 /* ViewController.swift */,
-				70A168FD262662C0002583F5 /* Main.storyboard */,
 				70A16900262662C5002583F5 /* Assets.xcassets */,
 				70A16902262662C5002583F5 /* LaunchScreen.storyboard */,
 				70A16905262662C5002583F5 /* Info.plist */,
@@ -283,10 +277,9 @@
 				B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */,
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
 				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
-				B83DFB4F2627729F001C20F3 /* MainPage.storyboard in Resources */,
+				B83DFB4F2627729F001C20F3 /* Main.storyboard in Resources */,
 				B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */,
 				B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */,
-				70A168FF262662C0002583F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				705ECDEE2629052800C002EA /* CalendarViewController.swift in Sources */,
-				70A168FC262662C0002583F5 /* ViewController.swift in Sources */,
 				705ECDF8262905A000C002EA /* HousingViewController.swift in Sources */,
 				7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */,
 				705ECDE92629050500C002EA /* ProfileViewController.swift in Sources */,
@@ -356,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		70A168FD262662C0002583F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70A168FE262662C0002583F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70A16902262662C5002583F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -497,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Rise Together/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Rise Together/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (

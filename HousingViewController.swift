@@ -7,13 +7,25 @@
 
 import UIKit
 
-class HousingViewController: UIViewController {
+class HousingViewController: UIViewController, UITableViewDataSource {
+    var addys: [String] = []
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        addys.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "housingCell")
+        return cell!
+    }
+    
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
-        var addys: [String] = []
         addys.append("123 Main St")
         addys.append("1301 S Adams Blvd, Apt 9")
         addys.append("8900 SW Randy Ave")
@@ -26,11 +38,11 @@ class HousingViewController: UIViewController {
         deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room.")
         deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room.")
         var housePics: [UIImage] = []
-        housePics.append(UIImage(contentsOfFile: "house1")!)
-        housePics.append(UIImage(contentsOfFile: "apt1")!)
-        housePics.append(UIImage(contentsOfFile: "house2")!)
-        housePics.append(UIImage(contentsOfFile: "house3")!)
-        housePics.append(UIImage(contentsOfFile: "apt2")!)
+        housePics.append(UIImage(named: "house1")!)
+        housePics.append(UIImage(named: "apt1")!)
+        housePics.append(UIImage(named: "house2")!)
+        housePics.append(UIImage(named: "house3")!)
+        housePics.append(UIImage(named: "apt2")!)
     }
     
     
