@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JIX-9u-6Qt" customClass="HousingTableViewCell" customModule="Rise_Together" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JIX-9u-6Qt" customClass="JobListingsTableViewCell" customModule="Rise_Together" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JIX-9u-6Qt" id="hhI-hs-Dpu">
@@ -165,6 +165,9 @@
                             <constraint firstAttribute="bottom" secondItem="h3U-ti-YiG" secondAttribute="bottom" constant="10" id="hmo-kD-ZZP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2Lc-dx-P8i" id="4pa-SM-GeS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5p-FJ-tkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
