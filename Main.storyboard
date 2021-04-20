@@ -30,10 +30,10 @@
         <!--feedMe-->
         <scene sceneID="2L0-yo-wLt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="feedMe" id="KaR-nB-rte" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="esU-4E-2vv"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="-226"/>
         </scene>

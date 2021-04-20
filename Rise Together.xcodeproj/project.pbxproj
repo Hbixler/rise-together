@@ -14,6 +14,8 @@
 		705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECDFC262905C600C002EA /* JobListingsViewController.swift */; };
 		705ECE0326290C9900C002EA /* JobListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */; };
 		705ECE0426290C9900C002EA /* JobListingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */; };
+		705ECE25262E607F00C002EA /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE23262E607F00C002EA /* FeedTableViewCell.swift */; };
+		705ECE26262E607F00C002EA /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705ECE24262E607F00C002EA /* FeedTableViewCell.xib */; };
 		70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F7262662C0002583F5 /* AppDelegate.swift */; };
 		70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F9262662C0002583F5 /* SceneDelegate.swift */; };
 		70A16901262662C5002583F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A16900262662C5002583F5 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		705ECDFC262905C600C002EA /* JobListingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingsViewController.swift; sourceTree = "<group>"; };
 		705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingsTableViewCell.swift; sourceTree = "<group>"; };
 		705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobListingsTableViewCell.xib; sourceTree = "<group>"; };
+		705ECE23262E607F00C002EA /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		705ECE24262E607F00C002EA /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		70A168F4262662C0002583F5 /* Rise Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rise Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A168F7262662C0002583F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A168F9262662C0002583F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */,
 				705ECDED2629052800C002EA /* CalendarViewController.swift */,
 				B83DFB2F26276B08001C20F3 /* Feed.storyboard */,
+				705ECE23262E607F00C002EA /* FeedTableViewCell.swift */,
+				705ECE24262E607F00C002EA /* FeedTableViewCell.xib */,
 				705ECDF22629057400C002EA /* FeedViewController.swift */,
 				7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */,
 				7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */,
@@ -278,6 +284,7 @@
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
 				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
 				B83DFB4F2627729F001C20F3 /* Main.storyboard in Resources */,
+				705ECE26262E607F00C002EA /* FeedTableViewCell.xib in Resources */,
 				B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */,
 				B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */,
 			);
@@ -313,6 +320,7 @@
 				70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */,
 				705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */,
 				705ECDF32629057400C002EA /* FeedViewController.swift in Sources */,
+				705ECE25262E607F00C002EA /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

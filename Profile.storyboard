@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Item-->
         <scene sceneID="Xb2-Ts-c9n">
             <objects>
                 <viewController storyboardIdentifier="profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,6 +131,8 @@
                             <constraint firstItem="jja-a9-Lz3" firstAttribute="bottom" secondItem="Z0k-el-lDY" secondAttribute="bottom" constant="10" id="u8E-RK-TyU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Profile" selectedImage="Profile" id="cWT-iR-gdf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kd-OM-Mg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,6 +144,7 @@
         <image name="Feed" width="392" height="222"/>
         <image name="Housing" width="374" height="220"/>
         <image name="Jobs" width="348" height="218"/>
+        <image name="Profile" width="312" height="224"/>
         <image name="Profile2" width="800" height="533"/>
         <image name="person.crop.circle.badge.plus.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
