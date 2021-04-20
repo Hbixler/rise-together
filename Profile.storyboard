@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Item-->
         <scene sceneID="Xb2-Ts-c9n">
             <objects>
-                <viewController id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9A-1o-os5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,9 +28,6 @@
                                 <state key="normal" title="View My Posts">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="5Ya-rl-Rom" kind="show" id="Ogn-Hg-kls"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username: xXEdnaXx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-1b-RrV">
                                 <rect key="frame" x="127" y="298" width="165" height="21"/>
@@ -134,20 +131,12 @@
                             <constraint firstItem="jja-a9-Lz3" firstAttribute="bottom" secondItem="Z0k-el-lDY" secondAttribute="bottom" constant="10" id="u8E-RK-TyU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Profile" selectedImage="Profile" id="cWT-iR-gdf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kd-OM-Mg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="-91.071428571428569"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="ao5-h4-IC4">
-            <objects>
-                <viewControllerPlaceholder id="5Ya-rl-Rom" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="obI-1a-Mrm"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gaD-QM-Cmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="889" y="-281"/>
         </scene>
     </scenes>
     <resources>
@@ -155,6 +144,7 @@
         <image name="Feed" width="392" height="222"/>
         <image name="Housing" width="374" height="220"/>
         <image name="Jobs" width="348" height="218"/>
+        <image name="Profile" width="312" height="224"/>
         <image name="Profile2" width="800" height="533"/>
         <image name="person.crop.circle.badge.plus.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

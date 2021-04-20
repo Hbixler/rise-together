@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Job Listings View Controller-->
+        <!--Item-->
         <scene sceneID="QfL-aR-AUN">
             <objects>
-                <viewController id="hHb-NN-bKf" customClass="JobListingsViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="jobListings" id="hHb-NN-bKf" customClass="JobListingsViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zU1-TO-oQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JIX-9u-6Qt" customClass="JobListingsTableViewCell" customModule="Rise_Together" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobListingsCell" id="JIX-9u-6Qt" customClass="JobListingsTableViewCell" customModule="Rise_Together" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JIX-9u-6Qt" id="hhI-hs-Dpu">
@@ -99,6 +99,8 @@
                             <constraint firstAttribute="bottom" secondItem="h3U-ti-YiG" secondAttribute="bottom" constant="10" id="hmo-kD-ZZP"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Jobs" id="2fU-63-EYK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="2Lc-dx-P8i" id="4pa-SM-GeS"/>
                     </connections>
@@ -112,6 +114,7 @@
         <image name="Calendar" width="354" height="224"/>
         <image name="Feed" width="392" height="222"/>
         <image name="Housing" width="374" height="220"/>
+        <image name="Jobs" width="348" height="218"/>
         <image name="Jobs2" width="800" height="533"/>
         <image name="Profile" width="312" height="224"/>
         <systemColor name="systemBackgroundColor">

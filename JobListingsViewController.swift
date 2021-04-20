@@ -8,14 +8,15 @@
 import UIKit
 
 class JobListingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var jobListingArr = ["Placeholder waiting for Noa"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jobListingArr.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell")
-        return cell!
+        tableView.register(UINib(nibName: "JobListingsTableViewCell", bundle: nil), forCellReuseIdentifier: "jobListingsCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell") as! JobListingsTableViewCell
+        cell.passIndex(index: indexPath.row)
+        return cell
     }
     
 
