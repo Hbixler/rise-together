@@ -13,6 +13,7 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.register(UINib(nibName: "JobListingsTableViewCell", bundle: nil), forCellReuseIdentifier: "jobListingsCell")
         let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell") as! JobListingsTableViewCell
         cell.passIndex(index: indexPath.row)
         return cell
