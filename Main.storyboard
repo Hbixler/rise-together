@@ -27,13 +27,13 @@
             </objects>
             <point key="canvasLocation" x="207" y="-224"/>
         </scene>
-        <!--feedMe-->
+        <!--Feed-->
         <scene sceneID="2L0-yo-wLt">
             <objects>
-                <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="feedMe" id="KaR-nB-rte" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="Feed" id="KaR-nB-rte" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="esU-4E-2vv"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="-226"/>
         </scene>
