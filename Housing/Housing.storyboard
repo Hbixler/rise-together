@@ -32,6 +32,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0V7-FW-TtB" kind="show" id="rTt-K7-Sk8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Housing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgz-12-COv">
                                 <rect key="frame" x="0.0" y="120" width="193" height="53"/>
@@ -114,6 +117,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQS-RD-lm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71.014492753623188" y="98.4375"/>
+        </scene>
+        <!--AddHousing-->
+        <scene sceneID="TAa-Qg-X8u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddHousing" referencedIdentifier="AddHousing" id="0V7-FW-TtB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9KU-MQ-Mqa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvQ-Bx-dSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640" y="-104"/>
         </scene>
     </scenes>
     <resources>
