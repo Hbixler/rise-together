@@ -22,11 +22,11 @@ class HousingTableViewCell: UITableViewCell {
         addys.append("456 Wayne St")
         addys.append("2020 Dreary Ln, Apt 2")
         var deets: [String] = []
-        deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room.")
-        deets.append("Two bedroom/one bathroom apartment. Looking for a roommate.")
-        deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms.")
-        deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room.")
-        deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room.")
+        deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room. $500 per month.")
+        deets.append("Two bedroom/one bathroom apartment. Looking for a roommate. $450 per month.")
+        deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms. $550 per month")
+        deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room. $600 per month")
+        deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room. $500 per month.")
         var housePics: [UIImage] = []
         housePics.append(UIImage(named: "house1")!)
         housePics.append(UIImage(named: "apt1")!)
