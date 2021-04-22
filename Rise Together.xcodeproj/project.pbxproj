@@ -32,6 +32,7 @@
 		B83DFB4F2627729F001C20F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB4E2627729F001C20F3 /* Main.storyboard */; };
 		B83DFB5726277364001C20F3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB5626277364001C20F3 /* Profile.storyboard */; };
 		B852B654262FA57400B5B675 /* AddHousing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B852B653262FA57400B5B675 /* AddHousing.storyboard */; };
+		B88E5A3B263237E80057E9B9 /* AddJob.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88E5A3A263237E80057E9B9 /* AddJob.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B83DFB4E2627729F001C20F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B83DFB5626277364001C20F3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B852B653262FA57400B5B675 /* AddHousing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddHousing.storyboard; sourceTree = "<group>"; };
+		B88E5A3A263237E80057E9B9 /* AddJob.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddJob.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				705ECE0226290C9900C002EA /* JobListingsTableViewCell.xib */,
 				705ECDFC262905C600C002EA /* JobListingsViewController.swift */,
 				B83DFB3926276B21001C20F3 /* JobListings.storyboard */,
+				B88E5A3A263237E80057E9B9 /* AddJob.storyboard */,
 				705ECE0126290C9900C002EA /* JobListingsTableViewCell.swift */,
 			);
 			path = "Job Listings";
@@ -329,6 +332,7 @@
 				705ECE0426290C9900C002EA /* JobListingsTableViewCell.xib in Resources */,
 				B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */,
 				B83DFB3A26276B21001C20F3 /* JobListings.storyboard in Resources */,
+				B88E5A3B263237E80057E9B9 /* AddJob.storyboard in Resources */,
 				7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */,
 				B83DFB4F2627729F001C20F3 /* Main.storyboard in Resources */,
 				705ECE26262E607F00C002EA /* FeedTableViewCell.xib in Resources */,
