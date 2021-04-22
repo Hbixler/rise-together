@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="71.014492753623188" y="98.4375"/>
         </scene>
-        <!--AddHousing-->
+        <!--addHousing-->
         <scene sceneID="TAa-Qg-X8u">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddHousing" referencedIdentifier="AddHousing" id="0V7-FW-TtB" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="addHousing" storyboardName="AddHousing" referencedIdentifier="addHousing" id="0V7-FW-TtB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9KU-MQ-Mqa"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvQ-Bx-dSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
