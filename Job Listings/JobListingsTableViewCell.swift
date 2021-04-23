@@ -15,6 +15,8 @@ class JobListingsTableViewCell: UITableViewCell {
     var job: [String] = []
     var deets: [String] = []
     var jobPics: [UIImage] = []
+    @IBOutlet weak var jobName: UILabel!
+    @IBOutlet weak var jobImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,6 +48,8 @@ class JobListingsTableViewCell: UITableViewCell {
     
     func passIndex(index: Int) {
         //Set labels and images to corresponding index in array here
+        jobName.text = job[index]
+        jobImage.image = jobPics[index]
     }
     
 }
