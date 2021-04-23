@@ -50,7 +50,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="description" destination="CCT-Mm-Aay" id="CBe-qX-k8g"/>
+                <outlet property="deets" destination="CCT-Mm-Aay" id="2wx-y0-nlR"/>
                 <outlet property="postPic" destination="40u-HO-guR" id="wxf-WY-qDL"/>
                 <outlet property="user" destination="rF6-gc-7XN" id="1gL-0d-JRE"/>
             </connections>
