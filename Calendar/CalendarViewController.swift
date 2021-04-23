@@ -9,16 +9,16 @@ import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return 42
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calendarCell", for: indexPath) as! CalendarCollectionViewCell
-        cell.passIndex(index: indexPath.row + 1)
+        cell.passIndex(index: indexPath.row + 1, month: dateLabel.text!)
         return cell
     }
     public var dates = ["April 2021", "May 2021", "June 2021", "July 2021", "Aug 2021", "Sept 2021", "Oct 2021", "Nov 2021", "Dec 2021", ]
-    var datechange = 0
+    var datechange = 1
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -33,6 +33,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
         if datechange < (dates.count - 1) {
             datechange = datechange + 1
             dateLabel.text = dates[datechange]
+            collectionView.reloadData()
             
         }
     }
@@ -42,8 +43,8 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
         if datechange > 0 {
             datechange = datechange - 1
             dateLabel.text = dates[datechange]
-                   
-               }
+            collectionView.reloadData()
+        }
     }
 
     // MARK: - Navigation
