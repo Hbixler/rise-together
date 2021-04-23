@@ -21,6 +21,10 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
+    
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {

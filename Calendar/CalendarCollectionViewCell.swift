@@ -10,7 +10,11 @@ import UIKit
 class CalendarCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var num: UILabel!
-    override class func awakeFromNib() {
+    override func awakeFromNib() {
         print("Woke up")
+    }
+    
+    func passIndex(index: Int) {
+        num.text = String(index)
     }
 }

@@ -14,6 +14,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calendarCell", for: indexPath) as! CalendarCollectionViewCell
+        cell.passIndex(index: indexPath.row + 1)
         return cell
     }
     public var dates = ["April 2021", "May 2021", "June 2021", "July 2021", "Aug 2021", "Sept 2021", "Oct 2021", "Nov 2021", "Dec 2021", ]
