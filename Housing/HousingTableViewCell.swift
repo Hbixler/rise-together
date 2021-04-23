@@ -16,6 +16,8 @@ class HousingTableViewCell: UITableViewCell {
     var addys: [String] = []
     var deets: [String] = []
     var housePics: [UIImage] = []
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var houseImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,7 +49,8 @@ class HousingTableViewCell: UITableViewCell {
     
     func passIndex(index: Int) {
         //Set labels and images to corresponding index in array here
-        //streetName.text = addys[0]
+        address.text = addys[index]
+        houseImage.image = housePics[index]
     }
     
 }
