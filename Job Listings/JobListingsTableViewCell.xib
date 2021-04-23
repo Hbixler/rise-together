@@ -50,6 +50,10 @@
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="jobImage" destination="nka-Qh-1Uk" id="JoO-g9-TSF"/>
+                <outlet property="jobName" destination="huE-13-mKO" id="fl6-1j-41t"/>
+            </connections>
             <point key="canvasLocation" x="195.6521739130435" y="51.227678571428569"/>
         </tableViewCell>
     </objects>
