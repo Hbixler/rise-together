@@ -8,21 +8,20 @@
 import UIKit
 
 class HousingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var addys: [String] = []
+    //var addys: [String] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.register(UINib(nibName: "HousingTableViewCell", bundle: nil), forCellReuseIdentifier: "housingCell")
         let cell = tableView.dequeueReusableCell(withIdentifier: "housingCell") as! HousingTableViewCell
         cell.passIndex(index: indexPath.row)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 216
     }
     
 
@@ -31,6 +30,7 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UINib(nibName: "HousingTableViewCell", bundle: nil), forCellReuseIdentifier: "housingCell")
         // Do any additional setup after loading the view.
     }
     

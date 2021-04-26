@@ -21,7 +21,6 @@ class HousingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         addys.append("123 Main St")
         addys.append("1301 S Adams Blvd, Apt 9")
         addys.append("8900 SW Randy Ave")
