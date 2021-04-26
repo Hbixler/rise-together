@@ -70,6 +70,10 @@
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="wrz-Km-vun" id="gtS-Uv-aEZ"/>
+                <outlet property="houseImage" destination="40D-Bm-t5e" id="dAB-Nm-Vr1"/>
+            </connections>
             <point key="canvasLocation" x="121.73913043478262" y="-31.808035714285712"/>
         </tableViewCell>
     </objects>
