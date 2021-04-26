@@ -13,21 +13,26 @@ class HousingTableViewCell: UITableViewCell {
      in passIndex that sets the outlets to the value of the array at that specified index.
      */
 
+    var addys: [String] = []
+    var deets: [String] = []
+    var housePics: [UIImage] = []
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var houseImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        var addys: [String] = []
         addys.append("123 Main St")
         addys.append("1301 S Adams Blvd, Apt 9")
         addys.append("8900 SW Randy Ave")
         addys.append("456 Wayne St")
         addys.append("2020 Dreary Ln, Apt 2")
-        var deets: [String] = []
+        
         deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room. $500 per month.")
         deets.append("Two bedroom/one bathroom apartment. Looking for a roommate. $450 per month.")
         deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms. $550 per month")
         deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room. $600 per month")
         deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room. $500 per month.")
-        var housePics: [UIImage] = []
+        
         housePics.append(UIImage(named: "house1")!)
         housePics.append(UIImage(named: "apt1")!)
         housePics.append(UIImage(named: "house2")!)
@@ -43,6 +48,8 @@ class HousingTableViewCell: UITableViewCell {
     
     func passIndex(index: Int) {
         //Set labels and images to corresponding index in array here
+        address.text = addys[index]
+        houseImage.image = housePics[index]
     }
     
 }
