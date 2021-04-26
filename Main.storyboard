@@ -11,7 +11,7 @@
         <scene sceneID="ukH-3c-nYr">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="profile" id="wbs-e9-BPR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bN7-fP-nMg"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="bN7-fP-nMg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ars-Gi-nfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -21,7 +21,7 @@
         <scene sceneID="hk1-oa-Irm">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="calendar" storyboardName="Calendar" referencedIdentifier="calendar" id="xuE-4d-ves" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gVQ-G7-pgu"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" selectedImage="Calendar" id="gVQ-G7-pgu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYy-n1-l73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,10 +30,10 @@
         <!--Feed-->
         <scene sceneID="2L0-yo-wLt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Feed" referencedIdentifier="Feed" id="KaR-nB-rte" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="esU-4E-2vv"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed" id="esU-4E-2vv"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-Li-Y80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="445" y="-226"/>
         </scene>
@@ -41,7 +41,7 @@
         <scene sceneID="i3c-OJ-Hrn">
             <objects>
                 <viewControllerPlaceholder storyboardName="JobListings" referencedIdentifier="jobListings" id="s5J-EL-Ul4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jHp-SM-G5h"/>
+                    <tabBarItem key="tabBarItem" title="Job Listings" image="Jobs" selectedImage="Jobs" id="jHp-SM-G5h"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XdK-At-WoV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
         <scene sceneID="M3b-pJ-Q0P">
             <objects>
                 <viewControllerPlaceholder storyboardName="Housing" referencedIdentifier="housing" id="FeE-rI-JD6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wyX-71-cj1"/>
+                    <tabBarItem key="tabBarItem" title="Housing" image="Housing" selectedImage="Housing" id="wyX-71-cj1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIY-79-Phr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,4 +79,11 @@
             <point key="canvasLocation" x="445" y="-687"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar" width="54" height="30"/>
+        <image name="Feed" width="64" height="34"/>
+        <image name="Housing" width="56" height="32"/>
+        <image name="Jobs" width="56" height="34"/>
+        <image name="Profile" width="44" height="32"/>
+    </resources>
 </document>
