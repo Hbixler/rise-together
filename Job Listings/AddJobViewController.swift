@@ -1,5 +1,5 @@
 //
-//  AddHousingViewController.swift
+//  AddJobViewController.swift
 //  Rise Together
 //
 //  Created by Hailey Bixler on 4/26/21.
@@ -7,33 +7,30 @@
 
 import UIKit
 
-class AddHousingViewController: UIViewController, UITextFieldDelegate, ImagePickerDelegate {
+class AddJobViewController: UIViewController, ImagePickerDelegate, UITextFieldDelegate {
+    
     
     func didSelect(image: UIImage?) {
         imageView.image = image
     }
-    
 
+    @IBOutlet weak var companyTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var detailsTextField: UITextField!
-    @IBOutlet weak var addressTextField: UITextField!
+    var delegate: jobData?
     var imagePicker: ImagePicker!
-    var delegate: housingData?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
-        detailsTextField.delegate = self
-        addressTextField.delegate = self
+        // Do any additional setup after loading the view.
     }
-    
     @IBAction func changeImage(_ sender: Any) {
         self.imagePicker.present(from: sender as! UIView)
     }
-    
-    @IBAction func submitHousing(_ sender: Any) {
-        delegate?.addHouse(address: addressTextField.text!, details: detailsTextField.text!, image: imageView.image!)
-        addressTextField.text = ""
-        detailsTextField.text = ""
+    @IBAction func addJob(_ sender: Any) {
+        delegate?.addJob(title: titleTextField.text!, details: companyTextField.text!, image: imageView.image!)
+        companyTextField.text = ""
+        titleTextField.text = ""
         imageView.image = nil
     }
     
@@ -44,6 +41,8 @@ class AddHousingViewController: UIViewController, UITextFieldDelegate, ImagePick
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+    
+
     /*
     // MARK: - Navigation
 

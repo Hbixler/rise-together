@@ -92,7 +92,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gri-gJ-d81" kind="show" id="guT-hy-Vcf"/>
+                                    <segue destination="gri-gJ-d81" kind="show" identifier="addJob" id="guT-hy-Vcf"/>
                                 </connections>
                             </button>
                         </subviews>
