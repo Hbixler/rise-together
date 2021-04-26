@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Feed-->
         <scene sceneID="eB8-QQ-MMR">
             <objects>
                 <viewController storyboardIdentifier="Feed" id="lF0-k5-3SD" customClass="FeedViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="sGq-De-5aU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Feed" id="Mb0-Wr-HZH"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed" id="Mb0-Wr-HZH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="1Ln-Ti-UuI" id="o3H-ye-zSf"/>

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Housing-->
         <scene sceneID="bZE-Lv-0Ef">
             <objects>
                 <viewController storyboardIdentifier="housing" id="hyS-dR-ktz" customClass="HousingViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="o4k-Jc-BKu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Housing" id="vxk-ig-KqI"/>
+                    <tabBarItem key="tabBarItem" title="Housing" image="Housing" selectedImage="Housing" id="vxk-ig-KqI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Wt8-xc-ZT6" id="kBA-FM-jt7"/>
