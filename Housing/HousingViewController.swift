@@ -7,16 +7,26 @@
 
 import UIKit
 
-class HousingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    //var addys: [String] = []
+class HousingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate, housingData {
+    
+    var addys: [String] = []
+    var deets: [String] = []
+    var housePics: [UIImage] = []
+    
+    func addHouse(address: String, details: String, image: UIImage) {
+        deets.append(details)
+        addys.append(address)
+        housePics.append(image)
+        tableView.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return addys.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "housingCell") as! HousingTableViewCell
-        cell.passIndex(index: indexPath.row)
+        cell.passIndex(newAddy: addys[indexPath.row], newImg: housePics[indexPath.row])
         return cell
     }
     
@@ -31,9 +41,36 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "HousingTableViewCell", bundle: nil), forCellReuseIdentifier: "housingCell")
-        // Do any additional setup after loading the view.
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.allowsEditing = true
+        pickerController.mediaTypes = ["public.image", "public.movie"]
+        pickerController.sourceType = .photoLibrary
+        addys.append("123 Main St")
+        addys.append("1301 S Adams Blvd, Apt 9")
+        addys.append("8900 SW Randy Ave")
+        addys.append("456 Wayne St")
+        addys.append("2020 Dreary Ln, Apt 2")
+        
+        deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room. $500 per month.")
+        deets.append("Two bedroom/one bathroom apartment. Looking for a roommate. $450 per month.")
+        deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms. $550 per month")
+        deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room. $600 per month")
+        deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room. $500 per month.")
+        
+        housePics.append(UIImage(named: "house1")!)
+        housePics.append(UIImage(named: "apt1")!)
+        housePics.append(UIImage(named: "house2")!)
+        housePics.append(UIImage(named: "house3")!)
+        housePics.append(UIImage(named: "apt2")!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addHousing" {
+            let newVC = segue.destination as! AddHousingViewController
+            newVC.delegate = self
+        }
+    }
     
     
     
@@ -50,4 +87,8 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     */
 
+}
+
+protocol housingData {
+    func addHouse(address: String, details: String, image: UIImage)
 }

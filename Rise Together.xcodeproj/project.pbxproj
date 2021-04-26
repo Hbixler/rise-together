@@ -17,6 +17,8 @@
 		705ECE25262E607F00C002EA /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE23262E607F00C002EA /* FeedTableViewCell.swift */; };
 		705ECE26262E607F00C002EA /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705ECE24262E607F00C002EA /* FeedTableViewCell.xib */; };
 		705ECE39262F9AC900C002EA /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE38262F9AC900C002EA /* CalendarCollectionViewCell.swift */; };
+		705ECE8226376FAC00C002EA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE8126376FAC00C002EA /* ImagePicker.swift */; };
+		705ECE8726376FCB00C002EA /* AddHousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705ECE8626376FCB00C002EA /* AddHousingViewController.swift */; };
 		70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F7262662C0002583F5 /* AppDelegate.swift */; };
 		70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A168F9262662C0002583F5 /* SceneDelegate.swift */; };
 		70A16901262662C5002583F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A16900262662C5002583F5 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		705ECE23262E607F00C002EA /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		705ECE24262E607F00C002EA /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		705ECE38262F9AC900C002EA /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		705ECE8126376FAC00C002EA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		705ECE8626376FCB00C002EA /* AddHousingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHousingViewController.swift; sourceTree = "<group>"; };
 		70A168F4262662C0002583F5 /* Rise Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rise Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A168F7262662C0002583F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A168F9262662C0002583F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +153,9 @@
 				7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */,
 				B83DFB3426276B14001C20F3 /* Housing.storyboard */,
 				B852B653262FA57400B5B675 /* AddHousing.storyboard */,
+				705ECE8626376FCB00C002EA /* AddHousingViewController.swift */,
 				705ECDF7262905A000C002EA /* HousingViewController.swift */,
+				705ECE8126376FAC00C002EA /* ImagePicker.swift */,
 			);
 			path = Housing;
 			sourceTree = "<group>";
@@ -365,12 +371,14 @@
 				705ECDEE2629052800C002EA /* CalendarViewController.swift in Sources */,
 				705ECDF8262905A000C002EA /* HousingViewController.swift in Sources */,
 				7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */,
+				705ECE8726376FCB00C002EA /* AddHousingViewController.swift in Sources */,
 				705ECDE92629050500C002EA /* ProfileViewController.swift in Sources */,
 				70A168F8262662C0002583F5 /* AppDelegate.swift in Sources */,
 				705ECE0326290C9900C002EA /* JobListingsTableViewCell.swift in Sources */,
 				70A168FA262662C0002583F5 /* SceneDelegate.swift in Sources */,
 				705ECDFD262905C600C002EA /* JobListingsViewController.swift in Sources */,
 				705ECE39262F9AC900C002EA /* CalendarCollectionViewCell.swift in Sources */,
+				705ECE8226376FAC00C002EA /* ImagePicker.swift in Sources */,
 				705ECDF32629057400C002EA /* FeedViewController.swift in Sources */,
 				705ECE25262E607F00C002EA /* FeedTableViewCell.swift in Sources */,
 			);
