@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="333" height="194"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" id="E9W-9v-h3E">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="E9W-9v-h3E">
                         <rect key="frame" x="0.0" y="0.0" width="332" height="194"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
