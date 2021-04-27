@@ -17,62 +17,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv3-2v-jzf">
-                                <rect key="frame" x="106" y="244" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-Ff-NoK">
-                                <rect key="frame" x="72" y="338" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMq-8a-R0N">
-                                <rect key="frame" x="177" y="438" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Housing Type: Apartment" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
-                                <rect key="frame" x="106" y="273" width="193" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address: 123 N 456th St, Omaha NE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
-                                <rect key="frame" x="76" y="328" width="263" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-bV-Zob">
-                                <rect key="frame" x="128" y="642" width="144" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit Housing Post"/>
-                                <connections>
-                                    <action selector="submitHousing:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="j4H-eb-PSp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
-                                <rect key="frame" x="158" y="381" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Image"/>
-                                <connections>
-                                    <action selector="changeImage:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="gAc-4d-dbE"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
-                                <rect key="frame" x="87" y="459" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-Lc-Ehn">
+                                <rect key="frame" x="10" y="44" width="394" height="808"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Ax-yhx">
+                                <rect key="frame" x="10" y="44" width="394" height="768"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv3-2v-jzf">
+                                        <rect key="frame" x="172" y="0.0" width="50" height="181.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
+                                        <rect key="frame" x="132.5" y="194.5" width="129.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-hn-GPA">
+                                        <rect key="frame" x="77" y="242" width="240" height="290"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-us-gMr">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="36.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
+                                                        <rect key="frame" x="51" y="0.0" width="138" height="36.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YxX-hF-wQw">
+                                                <rect key="frame" x="0.0" y="136.5" width="240" height="153.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
+                                                        <rect key="frame" x="70.5" y="0.0" width="99" height="30"/>
+                                                        <state key="normal" title="Change Image"/>
+                                                        <connections>
+                                                            <action selector="changeImage:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="gAc-4d-dbE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
+                                                        <rect key="frame" x="0.0" y="35" width="240" height="118.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-Ff-NoK">
+                                        <rect key="frame" x="172" y="545" width="50" height="179"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-bV-Zob">
+                                        <rect key="frame" x="125" y="737" width="144" height="31"/>
+                                        <state key="normal" title="Submit Housing Post"/>
+                                        <connections>
+                                            <action selector="submitHousing:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="j4H-eb-PSp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ck-PC-u1p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ck-PC-u1p" firstAttribute="bottom" secondItem="urf-Ax-yhx" secondAttribute="bottom" constant="50" id="7XF-Gi-KEL"/>
+                            <constraint firstItem="urf-Ax-yhx" firstAttribute="leading" secondItem="1ck-PC-u1p" secondAttribute="leading" constant="10" id="NX4-LC-PZF"/>
+                            <constraint firstItem="QoR-Lc-Ehn" firstAttribute="top" secondItem="1ck-PC-u1p" secondAttribute="top" id="ScT-xB-jAF"/>
+                            <constraint firstItem="1ck-PC-u1p" firstAttribute="bottom" secondItem="QoR-Lc-Ehn" secondAttribute="bottom" constant="10" id="iL4-Jl-a7U"/>
+                            <constraint firstItem="1ck-PC-u1p" firstAttribute="trailing" secondItem="QoR-Lc-Ehn" secondAttribute="trailing" constant="10" id="qzd-fU-BfQ"/>
+                            <constraint firstItem="urf-Ax-yhx" firstAttribute="top" secondItem="1ck-PC-u1p" secondAttribute="top" id="sGb-cX-LeS"/>
+                            <constraint firstItem="1ck-PC-u1p" firstAttribute="trailing" secondItem="urf-Ax-yhx" secondAttribute="trailing" constant="10" id="u79-Qw-J1g"/>
+                            <constraint firstItem="QoR-Lc-Ehn" firstAttribute="leading" secondItem="1ck-PC-u1p" secondAttribute="leading" constant="10" id="u95-PD-fbI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="addressTextField" destination="ImF-Ug-Gsh" id="2s3-m4-UPm"/>
@@ -82,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7q-re-S3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="74"/>
+            <point key="canvasLocation" x="295.6521739130435" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>

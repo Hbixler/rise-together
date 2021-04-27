@@ -9,85 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="Xb2-Ts-c9n">
             <objects>
-                <viewController storyboardIdentifier="profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" title="Profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9A-1o-os5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Edna" translatesAutoresizingMaskIntoConstraints="NO" id="gob-yH-JVj">
-                                <rect key="frame" x="35" y="128" width="114" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-Gq-Xtg">
-                                <rect key="frame" x="267" y="148" width="149" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <state key="normal" title="View My Posts">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username: xXEdnaXx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-1b-RrV">
-                                <rect key="frame" x="127" y="298" width="165" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: Edna Gredna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-gT-cp8">
-                                <rect key="frame" x="127" y="392" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-1B-Udd">
-                                <rect key="frame" x="138" y="327" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Username..."/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNi-TL-nRt">
-                                <rect key="frame" x="148" y="421" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Name..."/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: grednathebeast@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-Q9-LfJ">
-                                <rect key="frame" x="77" y="507" width="264" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-hN-EGk">
-                                <rect key="frame" x="150" y="536" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Email..."/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_______________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-Kf-Fqp">
-                                <rect key="frame" x="2" y="353" width="416" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_______________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL2-Ue-zbR">
-                                <rect key="frame" x="2" y="574" width="416" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_______________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iE-Gn-1gf">
-                                <rect key="frame" x="0.0" y="459" width="416" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0k-el-lDY">
-                                <rect key="frame" x="-11" y="802" width="425" height="80"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0k-el-lDY">
+                                <rect key="frame" x="-5" y="782" width="419" height="21"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ri-Uz-509">
                                         <rect key="frame" x="263" y="20" width="78" height="49"/>
@@ -122,16 +53,78 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-8C-hCP">
+                                <rect key="frame" x="25" y="64" width="364" height="565"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="192" id="H5Y-C3-WUS">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="73.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edna" translatesAutoresizingMaskIntoConstraints="NO" id="gob-yH-JVj">
+                                                <rect key="frame" x="0.0" y="1" width="72" height="72"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-Gq-Xtg">
+                                                <rect key="frame" x="264" y="22" width="100" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <state key="normal" title="View My Posts">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="xzr-MT-Tye"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username: xXEdnaXx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-1b-RrV">
+                                        <rect key="frame" x="0.0" y="128.5" width="364" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="BzH-gQ-K87"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-1B-Udd">
+                                        <rect key="frame" x="0.0" y="203.5" width="364" height="30.5"/>
+                                        <state key="normal" title="Change Username"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Edna Gredna" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-gT-cp8">
+                                        <rect key="frame" x="0.0" y="289" width="364" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="c3c-wk-UPn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNi-TL-nRt">
+                                        <rect key="frame" x="0.0" y="364" width="364" height="31"/>
+                                        <state key="normal" title="Change Name"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: grednathebeast@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-Q9-LfJ">
+                                        <rect key="frame" x="0.0" y="450" width="364" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7VC-5m-WoA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-hN-EGk">
+                                        <rect key="frame" x="0.0" y="525" width="364" height="40"/>
+                                        <state key="normal" title="Change Email"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jja-a9-Lz3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Z0k-el-lDY" firstAttribute="leading" secondItem="w9A-1o-os5" secondAttribute="leading" constant="-5" id="XLe-yJ-Z9D"/>
-                            <constraint firstItem="jja-a9-Lz3" firstAttribute="trailing" secondItem="Z0k-el-lDY" secondAttribute="trailing" id="jaF-CG-hen"/>
-                            <constraint firstItem="jja-a9-Lz3" firstAttribute="bottom" secondItem="Z0k-el-lDY" secondAttribute="bottom" constant="10" id="u8E-RK-TyU"/>
+                            <constraint firstItem="Z0k-el-lDY" firstAttribute="top" secondItem="XoA-8C-hCP" secondAttribute="bottom" constant="150" id="Pdh-as-tvn"/>
+                            <constraint firstItem="jja-a9-Lz3" firstAttribute="trailing" secondItem="XoA-8C-hCP" secondAttribute="trailing" constant="25" id="ZdN-lP-6GS"/>
+                            <constraint firstItem="XoA-8C-hCP" firstAttribute="top" secondItem="jja-a9-Lz3" secondAttribute="top" constant="20" id="bCk-tc-n7n"/>
+                            <constraint firstItem="XoA-8C-hCP" firstAttribute="leading" secondItem="jja-a9-Lz3" secondAttribute="leading" constant="25" id="eFF-bt-S1k"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Profile" selectedImage="Profile" id="cWT-iR-gdf"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile2" id="cWT-iR-gdf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kd-OM-Mg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
