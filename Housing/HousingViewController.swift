@@ -52,11 +52,11 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
         addys.append("456 Wayne St")
         addys.append("2020 Dreary Ln, Apt 2")
         
-        deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room. $500 per month.")
-        deets.append("Two bedroom/one bathroom apartment. Looking for a roommate. $450 per month.")
-        deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms. $550 per month")
-        deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room. $600 per month")
-        deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room. $500 per month.")
+        deets.append("Three bedroom/two bathroom house. Looking for a roommate to fill the third room. $500 per month. Call (402)568-7832 if interested.")
+        deets.append("Two bedroom/one bathroom apartment. Looking for a roommate. $450 per month. Call (402)568-7832 if interested.")
+        deets.append("Four bedroom/two bathroom house. Looking for two roommates to fill the extra rooms. $550 per month. Call (402)673-2464 if interested.")
+        deets.append("Two bedroom/two bathroom house. Looking for a roommate to fill the second room. $600 per month. Call (402)758-6732 if interested.")
+        deets.append("Three bedroom/two bathroom apartment. Looking for a roommate to fill the third room. $500 per month. Call (402)754-8679 if interested.")
         
         housePics.append(UIImage(named: "house1")!)
         housePics.append(UIImage(named: "apt1")!)
