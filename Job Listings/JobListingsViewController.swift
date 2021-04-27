@@ -7,14 +7,27 @@
 
 import UIKit
 
-class JobListingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class JobListingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, jobData {
+    
+    func addJob(title: String, details: String, image: UIImage) {
+        job.append(title)
+        deets.append(details)
+        jobPics.append(image)
+        tableView.reloadData()
+    }
+    
+    
+    var job: [String] = []
+    var deets: [String] = []
+    var jobPics: [UIImage] = []
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return job.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell") as! JobListingsTableViewCell
-        cell.passIndex(index: indexPath.row)
+        cell.passIndex(name: job[indexPath.row], image: jobPics[indexPath.row])
         return cell
     }
     
@@ -29,18 +42,34 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "JobListingsTableViewCell", bundle: nil), forCellReuseIdentifier: "jobListingsCell")
-        // Do any additional setup after loading the view.
+        job.append("Hausmann Construction Worker")
+        job.append("Jimmy's Lawncare Services")
+        job.append("McDonald's Worker")
+        job.append("Part-Time Babysitter")
+        job.append("High School Night Janitor")
+        
+        deets.append("Full-time construction worker. Some experience wanted. Seasonal worker. Wages $11-$14 per hour.")
+        deets.append("Part-time lawncare worker. Some experience wanted but not necessary. Seasonal worker. Wages $9-$12 per hour.")
+        deets.append("Part-time cashier. No experience needed. Wages $9-$12 per hour.")
+        deets.append("After school babysitter for two kids ages 5 and 9. Some experience or references needed. Wages $12-$17 per hour.")
+        deets.append("Full-time night shift janitor. Some experience wanted but not necessary. Seasonal worker. Wages $15-$20 per hour.")
+        
+        jobPics.append(UIImage(named: "job1")!)
+        jobPics.append(UIImage(named: "job2")!)
+        jobPics.append(UIImage(named: "job3")!)
+        jobPics.append(UIImage(named: "job4")!)
+        jobPics.append(UIImage(named: "job5")!)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "addJob" {
+            let newVC = segue.destination as! AddJobViewController
+            newVC.delegate = self
+        }
     }
-    */
-
+    
+}
+    
+protocol jobData {
+    func addJob(title: String, details: String, image: UIImage)
 }

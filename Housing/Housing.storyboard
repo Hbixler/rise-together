@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Housing-->
         <scene sceneID="bZE-Lv-0Ef">
             <objects>
-                <viewController storyboardIdentifier="housing" id="hyS-dR-ktz" customClass="HousingViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="housing" title="Housing" id="hyS-dR-ktz" customClass="HousingViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVX-UC-tS1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="o4k-Jc-BKu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Housing" id="vxk-ig-KqI"/>
+                    <tabBarItem key="tabBarItem" title="Housing" image="Housing" selectedImage="Housing2" id="vxk-ig-KqI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Wt8-xc-ZT6" id="kBA-FM-jt7"/>
@@ -86,6 +86,7 @@
     </scenes>
     <resources>
         <image name="Housing" width="56" height="32"/>
+        <image name="Housing2" width="800" height="534"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

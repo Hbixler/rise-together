@@ -1,5 +1,5 @@
 //
-//  AddHousingViewController.swift
+//  AddJobViewController.swift
 //  Rise Together
 //
 //  Created by Hailey Bixler on 4/26/21.
@@ -7,37 +7,34 @@
 
 import UIKit
 
-class AddHousingViewController: UIViewController, UITextFieldDelegate, ImagePickerDelegate {
+class AddJobViewController: UIViewController, ImagePickerDelegate, UITextFieldDelegate {
+    
     
     func didSelect(image: UIImage?) {
         imageView.image = image
     }
-    
 
+    @IBOutlet weak var companyTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var detailsTextField: UITextField!
-    @IBOutlet weak var addressTextField: UITextField!
+    var delegate: jobData?
     var imagePicker: ImagePicker!
-    var delegate: housingData?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
-        detailsTextField.delegate = self
-        addressTextField.delegate = self
+        // Do any additional setup after loading the view.
     }
-    
     @IBAction func changeImage(_ sender: Any) {
         self.imagePicker.present(from: sender as! UIView)
     }
-    
-    @IBAction func submitHousing(_ sender: Any) {
-        if addressTextField.text != "" && detailsTextField.text != "" && imageView.image != nil {
-            delegate?.addHouse(address: addressTextField.text!, details: detailsTextField.text!, image: imageView.image!)
+    @IBAction func addJob(_ sender: Any) {
+        if companyTextField.text != "" && titleTextField.text != "" && imageView.image != nil {
+            delegate?.addJob(title: titleTextField.text!, details: companyTextField.text!, image: imageView.image!)
             let alert = UIAlertController(title: "", message: "Submitted!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            addressTextField.text = ""
-            detailsTextField.text = ""
+            companyTextField.text = ""
+            titleTextField.text = ""
             imageView.image = nil
         } else {
             let alert = UIAlertController(title: "", message: "Please fill out all fields", preferredStyle: UIAlertController.Style.alert)
@@ -53,6 +50,8 @@ class AddHousingViewController: UIViewController, UITextFieldDelegate, ImagePick
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+    
+
     /*
     // MARK: - Navigation
 
