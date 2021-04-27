@@ -31,10 +31,19 @@ class AddHousingViewController: UIViewController, UITextFieldDelegate, ImagePick
     }
     
     @IBAction func submitHousing(_ sender: Any) {
-        delegate?.addHouse(address: addressTextField.text!, details: detailsTextField.text!, image: imageView.image!)
-        addressTextField.text = ""
-        detailsTextField.text = ""
-        imageView.image = nil
+        if addressTextField.text != "" && detailsTextField.text != "" && imageView.image != nil {
+            delegate?.addHouse(address: addressTextField.text!, details: detailsTextField.text!, image: imageView.image!)
+            let alert = UIAlertController(title: "", message: "Submitted!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            addressTextField.text = ""
+            detailsTextField.text = ""
+            imageView.image = nil
+        } else {
+            let alert = UIAlertController(title: "", message: "Please fill out all fields", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {

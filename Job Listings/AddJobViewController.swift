@@ -28,10 +28,19 @@ class AddJobViewController: UIViewController, ImagePickerDelegate, UITextFieldDe
         self.imagePicker.present(from: sender as! UIView)
     }
     @IBAction func addJob(_ sender: Any) {
-        delegate?.addJob(title: titleTextField.text!, details: companyTextField.text!, image: imageView.image!)
-        companyTextField.text = ""
-        titleTextField.text = ""
-        imageView.image = nil
+        if companyTextField.text != "" && titleTextField.text != "" && imageView.image != nil {
+            delegate?.addJob(title: titleTextField.text!, details: companyTextField.text!, image: imageView.image!)
+            let alert = UIAlertController(title: "", message: "Submitted!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            companyTextField.text = ""
+            titleTextField.text = ""
+            imageView.image = nil
+        } else {
+            let alert = UIAlertController(title: "", message: "Please fill out all fields", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
