@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="Xb2-Ts-c9n">
             <objects>
-                <viewController storyboardIdentifier="profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" title="Profile" id="d2f-JR-xbl" customClass="ProfileViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9A-1o-os5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +51,7 @@
                                         <state key="normal" title="Housing" image="Profile2"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-8C-hCP">
                                 <rect key="frame" x="25" y="64" width="364" height="565"/>
@@ -61,11 +63,11 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edna" translatesAutoresizingMaskIntoConstraints="NO" id="gob-yH-JVj">
                                                 <rect key="frame" x="0.0" y="1" width="72" height="72"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-Gq-Xtg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-Gq-Xtg">
                                                 <rect key="frame" x="264" y="22" width="100" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <state key="normal" title="View My Posts">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
                                             </button>
                                         </subviews>
@@ -80,7 +82,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-1B-Udd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-1B-Udd">
                                         <rect key="frame" x="0.0" y="203.5" width="364" height="30.5"/>
                                         <state key="normal" title="Change Username"/>
                                     </button>
@@ -93,7 +95,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNi-TL-nRt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNi-TL-nRt">
                                         <rect key="frame" x="0.0" y="364" width="364" height="31"/>
                                         <state key="normal" title="Change Name"/>
                                     </button>
@@ -106,23 +108,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-hN-EGk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-hN-EGk">
                                         <rect key="frame" x="0.0" y="525" width="364" height="40"/>
                                         <state key="normal" title="Change Email"/>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jja-a9-Lz3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Z0k-el-lDY" firstAttribute="top" secondItem="XoA-8C-hCP" secondAttribute="bottom" constant="150" id="Pdh-as-tvn"/>
                             <constraint firstItem="jja-a9-Lz3" firstAttribute="trailing" secondItem="XoA-8C-hCP" secondAttribute="trailing" constant="25" id="ZdN-lP-6GS"/>
                             <constraint firstItem="XoA-8C-hCP" firstAttribute="top" secondItem="jja-a9-Lz3" secondAttribute="top" constant="20" id="bCk-tc-n7n"/>
                             <constraint firstItem="XoA-8C-hCP" firstAttribute="leading" secondItem="jja-a9-Lz3" secondAttribute="leading" constant="25" id="eFF-bt-S1k"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jja-a9-Lz3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Profile" selectedImage="Profile" id="cWT-iR-gdf"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile2" id="cWT-iR-gdf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kd-OM-Mg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,5 +140,11 @@
         <image name="Jobs" width="56" height="34"/>
         <image name="Profile" width="44" height="32"/>
         <image name="Profile2" width="800" height="533"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
