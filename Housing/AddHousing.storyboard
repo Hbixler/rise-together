@@ -24,54 +24,54 @@
                                 <rect key="frame" x="10" y="44" width="394" height="768"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv3-2v-jzf">
-                                        <rect key="frame" x="172" y="0.0" width="50" height="146.5"/>
+                                        <rect key="frame" x="172" y="0.0" width="50" height="181.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Housing Type: Apartment" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
-                                        <rect key="frame" x="100.5" y="159.5" width="193" height="40.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
+                                        <rect key="frame" x="132.5" y="194.5" width="129.5" height="34.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-hn-GPA">
-                                        <rect key="frame" x="65.5" y="213" width="263" height="340"/>
+                                        <rect key="frame" x="77" y="242" width="240" height="290"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-us-gMr">
-                                                <rect key="frame" x="0.0" y="0.0" width="263" height="86.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="36.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address: 123 N 456th St, Omaha NE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="86.5"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
+                                                        <rect key="frame" x="51" y="0.0" width="138" height="36.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YxX-hF-wQw">
-                                                <rect key="frame" x="0.0" y="186.5" width="263" height="153.5"/>
+                                                <rect key="frame" x="0.0" y="136.5" width="240" height="153.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
-                                                        <rect key="frame" x="82" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="70.5" y="0.0" width="99" height="30"/>
                                                         <state key="normal" title="Change Image"/>
                                                         <connections>
                                                             <action selector="changeImage:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="gAc-4d-dbE"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
-                                                        <rect key="frame" x="11.5" y="35" width="240" height="118.5"/>
+                                                        <rect key="frame" x="0.0" y="35" width="240" height="118.5"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-Ff-NoK">
-                                        <rect key="frame" x="172" y="566" width="50" height="144"/>
+                                        <rect key="frame" x="172" y="545" width="50" height="179"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-bV-Zob">
-                                        <rect key="frame" x="125" y="723" width="144" height="45"/>
+                                        <rect key="frame" x="125" y="737" width="144" height="31"/>
                                         <state key="normal" title="Submit Housing Post"/>
                                         <connections>
                                             <action selector="submitHousing:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="j4H-eb-PSp"/>

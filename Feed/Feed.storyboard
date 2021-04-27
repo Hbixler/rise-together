@@ -12,7 +12,7 @@
         <!--Feed-->
         <scene sceneID="eB8-QQ-MMR">
             <objects>
-                <viewController storyboardIdentifier="Feed" id="lF0-k5-3SD" customClass="FeedViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Feed" title="Feed" id="lF0-k5-3SD" customClass="FeedViewController" customModule="Rise_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLd-Zy-i2q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="sGq-De-5aU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed" id="Mb0-Wr-HZH"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Feed" selectedImage="Feed2" id="Mb0-Wr-HZH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="1Ln-Ti-UuI" id="o3H-ye-zSf"/>
@@ -58,6 +58,7 @@
     </scenes>
     <resources>
         <image name="Feed" width="64" height="34"/>
+        <image name="Feed2" width="800" height="533"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
