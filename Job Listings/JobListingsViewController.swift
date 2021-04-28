@@ -7,7 +7,13 @@
 
 import UIKit
 
-class JobListingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, jobData {
+class JobListingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, jobData, showDetails {
+    
+    func showDetails(index: Int) {
+        currentIndex = index
+        //perform segue
+    }
+    
     
     func addJob(title: String, details: String, image: UIImage) {
         job.append(title)
@@ -16,10 +22,10 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.reloadData()
     }
     
-    
     var job: [String] = []
     var deets: [String] = []
     var jobPics: [UIImage] = []
+    var currentIndex: Int?
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return job.count
@@ -27,12 +33,12 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell") as! JobListingsTableViewCell
-        cell.passIndex(name: job[indexPath.row], image: jobPics[indexPath.row])
+        cell.passIndex(name: job[indexPath.row], image: jobPics[indexPath.row], index: indexPath.row)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 251
+        return 194
     }
     
 
@@ -65,6 +71,9 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
         if segue.identifier == "addJob" {
             let newVC = segue.destination as! AddJobViewController
             newVC.delegate = self
+        }
+        else if segue.identifier == "Name here" {
+            //new vc stuff
         }
     }
     

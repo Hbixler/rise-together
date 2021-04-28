@@ -7,11 +7,12 @@
 
 import UIKit
 
-class HousingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate, housingData {
+class HousingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate, housingData, showDetails {
     
     var addys: [String] = []
     var deets: [String] = []
     var housePics: [UIImage] = []
+    var currentIndex: Int?
     
     func addHouse(address: String, details: String, image: UIImage) {
         deets.append(details)
@@ -20,18 +21,23 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.reloadData()
     }
     
+    func showDetails(index: Int) {
+        currentIndex = index
+        //perform segue
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return addys.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "housingCell") as! HousingTableViewCell
-        cell.passIndex(newAddy: addys[indexPath.row], newImg: housePics[indexPath.row])
+        cell.passIndex(newAddy: addys[indexPath.row], newImg: housePics[indexPath.row], index: indexPath.row)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 216
+        return 194
     }
     
 
@@ -70,22 +76,10 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
             let newVC = segue.destination as! AddHousingViewController
             newVC.delegate = self
         }
+        else if segue.identifier == "houseDSegue" {
+            //change variables
+        }
     }
-    
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

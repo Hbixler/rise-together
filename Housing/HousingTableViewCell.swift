@@ -15,6 +15,7 @@ class HousingTableViewCell: UITableViewCell {
 
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var houseImage: UIImageView!
+    var index: Int?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +27,14 @@ class HousingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func passIndex(newAddy: String, newImg: UIImage) {
+    func passIndex(newAddy: String, newImg: UIImage, index: Int) {
         //Set labels and images to corresponding index in array here
         address.text = newAddy
         houseImage.image = newImg
+        self.index = index
     }
-    
+}
+
+protocol showDetails {
+    func showDetails(index: Int)
 }
