@@ -28,6 +28,7 @@
 		70A1691A262662C6002583F5 /* Rise_TogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A16919262662C6002583F5 /* Rise_TogetherUITests.swift */; };
 		7CD1E9EA26277BD8007F715F /* HousingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */; };
 		7CD1E9EB26277BD8007F715F /* HousingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */; };
+		8F26E9E7263775C100D9D612 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26E9E6263775C100D9D612 /* Details.storyboard */; };
 		B83DFB2B26276AF5001C20F3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */; };
 		B83DFB3026276B08001C20F3 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB2F26276B08001C20F3 /* Feed.storyboard */; };
 		B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83DFB3426276B14001C20F3 /* Housing.storyboard */; };
@@ -83,6 +84,7 @@
 		70A1691B262662C6002583F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingTableViewCell.swift; sourceTree = "<group>"; };
 		7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousingTableViewCell.xib; sourceTree = "<group>"; };
+		8F26E9E6263775C100D9D612 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 		B83DFB2A26276AF5001C20F3 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B83DFB2F26276B08001C20F3 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		B83DFB3426276B14001C20F3 /* Housing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Housing.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD1E9E826277BD8007F715F /* HousingTableViewCell.swift */,
+				8F26E9E6263775C100D9D612 /* Details.storyboard */,
 				7CD1E9E926277BD8007F715F /* HousingTableViewCell.xib */,
 				B83DFB3426276B14001C20F3 /* Housing.storyboard */,
 				B852B653262FA57400B5B675 /* AddHousing.storyboard */,
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70A16904262662C5002583F5 /* LaunchScreen.storyboard in Resources */,
+				8F26E9E7263775C100D9D612 /* Details.storyboard in Resources */,
 				70A16901262662C5002583F5 /* Assets.xcassets in Resources */,
 				B852B654262FA57400B5B675 /* AddHousing.storyboard in Resources */,
 				B83DFB3526276B14001C20F3 /* Housing.storyboard in Resources */,
