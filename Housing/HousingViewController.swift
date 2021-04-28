@@ -23,7 +23,7 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func showDetails(index: Int) {
         currentIndex = index
-        //perform segue
+        performSegue(withIdentifier: "toDetails", sender: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,6 +32,7 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "housingCell") as! HousingTableViewCell
+        cell.delegate = self
         cell.passIndex(newAddy: addys[indexPath.row], newImg: housePics[indexPath.row], index: indexPath.row)
         return cell
     }
@@ -76,8 +77,11 @@ class HousingViewController: UIViewController, UITableViewDataSource, UITableVie
             let newVC = segue.destination as! AddHousingViewController
             newVC.delegate = self
         }
-        else if segue.identifier == "houseDSegue" {
-            //change variables
+        else if segue.identifier == "toDetails" {
+            let newVC = segue.destination as! DetailsViewController
+            newVC.titleString = addys[currentIndex!]
+            newVC.details = deets[currentIndex!]
+            newVC.image = housePics[currentIndex!]
         }
     }
 

@@ -16,11 +16,16 @@ class HousingTableViewCell: UITableViewCell {
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var houseImage: UIImageView!
     var index: Int?
+    var delegate: showDetails?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
+    @IBAction func detailsButton(_ sender: Any) {
+        delegate?.showDetails(index: index!)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

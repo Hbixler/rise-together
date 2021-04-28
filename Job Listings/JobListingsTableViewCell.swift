@@ -16,12 +16,17 @@ class JobListingsTableViewCell: UITableViewCell {
     @IBOutlet weak var jobName: UILabel!
     @IBOutlet weak var jobImage: UIImageView!
     var index: Int?
+    var delegate: showDetails?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         //Add array with details here
     }
-
+    
+    @IBAction func detailsButton(_ sender: Any) {
+        delegate?.showDetails(index: index!)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

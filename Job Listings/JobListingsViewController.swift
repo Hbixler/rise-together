@@ -11,7 +11,7 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
     
     func showDetails(index: Int) {
         currentIndex = index
-        //perform segue
+        performSegue(withIdentifier: "toDetails", sender: self)
     }
     
     
@@ -33,6 +33,7 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "jobListingsCell") as! JobListingsTableViewCell
+        cell.delegate = self
         cell.passIndex(name: job[indexPath.row], image: jobPics[indexPath.row], index: indexPath.row)
         return cell
     }
@@ -72,8 +73,11 @@ class JobListingsViewController: UIViewController, UITableViewDelegate, UITableV
             let newVC = segue.destination as! AddJobViewController
             newVC.delegate = self
         }
-        else if segue.identifier == "Name here" {
-            //new vc stuff
+        else if segue.identifier == "toDetails" {
+            let newVC = segue.destination as! DetailsViewController
+            newVC.titleString = job[currentIndex!]
+            newVC.details = deets[currentIndex!]
+            newVC.image = jobPics[currentIndex!]
         }
     }
     
