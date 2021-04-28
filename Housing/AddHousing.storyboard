@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,80 +16,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-Lc-Ehn">
-                                <rect key="frame" x="10" y="44" width="394" height="808"/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Ax-yhx">
-                                <rect key="frame" x="10" y="44" width="394" height="768"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrs-yt-DJP">
+                                <rect key="frame" x="112" y="94" width="190.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="0.20000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Ax-yhx">
+                                <rect key="frame" x="10" y="265.5" width="394" height="365"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv3-2v-jzf">
-                                        <rect key="frame" x="172" y="0.0" width="50" height="181.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
-                                        <rect key="frame" x="132.5" y="194.5" width="129.5" height="34.5"/>
+                                        <rect key="frame" x="97" y="0.0" width="200" height="34"/>
+                                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="KtB-LO-TPj"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-hn-GPA">
-                                        <rect key="frame" x="77" y="242" width="240" height="290"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
+                                        <rect key="frame" x="97" y="84" width="200" height="34"/>
+                                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-hn-GPA">
+                                        <rect key="frame" x="97" y="168" width="200" height="197"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-us-gMr">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="36.5"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-Ug-Gsh">
-                                                        <rect key="frame" x="51" y="0.0" width="138" height="36.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YxX-hF-wQw">
-                                                <rect key="frame" x="0.0" y="136.5" width="240" height="153.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
-                                                        <rect key="frame" x="70.5" y="0.0" width="99" height="30"/>
-                                                        <state key="normal" title="Change Image"/>
-                                                        <connections>
-                                                            <action selector="changeImage:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="gAc-4d-dbE"/>
-                                                        </connections>
-                                                    </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
-                                                        <rect key="frame" x="0.0" y="35" width="240" height="118.5"/>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
+                                                <rect key="frame" x="47" y="0.0" width="106" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="tintColor" red="0.46286183600000003" green="0.46416205170000002" blue="0.80003499980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Upload Image"/>
+                                                <connections>
+                                                    <action selector="changeImage:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="gAc-4d-dbE"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
+                                                <rect key="frame" x="0.0" y="43" width="200" height="154"/>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-Ff-NoK">
-                                        <rect key="frame" x="172" y="545" width="50" height="179"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-bV-Zob">
-                                        <rect key="frame" x="125" y="737" width="144" height="31"/>
-                                        <state key="normal" title="Submit Housing Post"/>
-                                        <connections>
-                                            <action selector="submitHousing:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="j4H-eb-PSp"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="25a-tD-cM0" firstAttribute="width" secondItem="zzT-5u-rj1" secondAttribute="width" id="122-Q5-H1J"/>
+                                    <constraint firstItem="ImF-Ug-Gsh" firstAttribute="width" secondItem="zzT-5u-rj1" secondAttribute="width" id="D9U-yW-n4Z"/>
+                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-bV-Zob">
+                                <rect key="frame" x="107" y="800" width="200" height="42"/>
+                                <color key="backgroundColor" red="0.46286183600000003" green="0.46416205170000002" blue="0.80003499980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="1VC-P5-pUW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Add House">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitHousing:" destination="RJU-Iz-KRR" eventType="touchUpInside" id="j4H-eb-PSp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ck-PC-u1p"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.90510649305239144" green="0.91879165957608988" blue="0.94904142619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="1ck-PC-u1p" firstAttribute="bottom" secondItem="urf-Ax-yhx" secondAttribute="bottom" constant="50" id="7XF-Gi-KEL"/>
+                            <constraint firstItem="6Uz-bV-Zob" firstAttribute="centerX" secondItem="kV9-lj-8No" secondAttribute="centerX" id="84V-hg-mJT"/>
+                            <constraint firstItem="urf-Ax-yhx" firstAttribute="centerX" secondItem="kV9-lj-8No" secondAttribute="centerX" id="90J-J4-ql4"/>
                             <constraint firstItem="urf-Ax-yhx" firstAttribute="leading" secondItem="1ck-PC-u1p" secondAttribute="leading" constant="10" id="NX4-LC-PZF"/>
-                            <constraint firstItem="QoR-Lc-Ehn" firstAttribute="top" secondItem="1ck-PC-u1p" secondAttribute="top" id="ScT-xB-jAF"/>
-                            <constraint firstItem="1ck-PC-u1p" firstAttribute="bottom" secondItem="QoR-Lc-Ehn" secondAttribute="bottom" constant="10" id="iL4-Jl-a7U"/>
-                            <constraint firstItem="1ck-PC-u1p" firstAttribute="trailing" secondItem="QoR-Lc-Ehn" secondAttribute="trailing" constant="10" id="qzd-fU-BfQ"/>
-                            <constraint firstItem="urf-Ax-yhx" firstAttribute="top" secondItem="1ck-PC-u1p" secondAttribute="top" id="sGb-cX-LeS"/>
+                            <constraint firstItem="1ck-PC-u1p" firstAttribute="bottom" secondItem="6Uz-bV-Zob" secondAttribute="bottom" constant="20" id="nhA-d2-JpE"/>
+                            <constraint firstItem="urf-Ax-yhx" firstAttribute="centerY" secondItem="kV9-lj-8No" secondAttribute="centerY" id="rnM-q9-FXY"/>
+                            <constraint firstItem="Vrs-yt-DJP" firstAttribute="centerX" secondItem="kV9-lj-8No" secondAttribute="centerX" id="sFv-hI-Umg"/>
                             <constraint firstItem="1ck-PC-u1p" firstAttribute="trailing" secondItem="urf-Ax-yhx" secondAttribute="trailing" constant="10" id="u79-Qw-J1g"/>
-                            <constraint firstItem="QoR-Lc-Ehn" firstAttribute="leading" secondItem="1ck-PC-u1p" secondAttribute="leading" constant="10" id="u95-PD-fbI"/>
+                            <constraint firstItem="Vrs-yt-DJP" firstAttribute="top" secondItem="1ck-PC-u1p" secondAttribute="top" constant="50" id="w3P-91-59m"/>
                         </constraints>
                     </view>
                     <connections>
@@ -104,9 +104,4 @@
             <point key="canvasLocation" x="295.6521739130435" y="73.660714285714278"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
