@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Ax-yhx">
-                                <rect key="frame" x="10" y="265.5" width="394" height="365"/>
+                                <rect key="frame" x="10" y="264" width="394" height="368"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Housing Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-5u-rj1">
                                         <rect key="frame" x="97" y="0.0" width="200" height="34"/>
@@ -42,10 +42,10 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-hn-GPA">
-                                        <rect key="frame" x="97" y="168" width="200" height="197"/>
+                                        <rect key="frame" x="97" y="168" width="200" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-72-Kg5">
-                                                <rect key="frame" x="47" y="0.0" width="106" height="33"/>
+                                                <rect key="frame" x="47" y="0.0" width="106" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="tintColor" red="0.46286183600000003" green="0.46416205170000002" blue="0.80003499980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Upload Image"/>
@@ -54,9 +54,12 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25a-tD-cM0">
-                                                <rect key="frame" x="0.0" y="43" width="200" height="154"/>
+                                                <rect key="frame" x="0.0" y="46" width="200" height="154"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="njE-ZY-J8I"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
